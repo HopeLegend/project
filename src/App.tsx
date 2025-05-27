@@ -1,23 +1,24 @@
-import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './routes/Home';
+import Search from './routes/Search';
+import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <BrowserRouter>
+      <header>
+        <h1>Last.fm Clone</h1>
+        <nav>
+          <Link to="/">Главная</Link>
+          <Link to="/search">Поиск</Link>
+        </nav>
+      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-// export default App;
+export default App;
