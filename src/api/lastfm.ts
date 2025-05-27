@@ -1,4 +1,4 @@
-export const LASTFM_API_KEY = '6e81a7d82c8ffc507bb2bcfc1f45ddc0';
+export const LASTFM_API_KEY = 'e2c5939f6232a96c047626af6f3c9b50';
 export const API_ENDPOINT = 'https://ws.audioscrobbler.com/2.0/';
 
 type ApiParams = Record<string, string | number>;
@@ -21,7 +21,7 @@ async function fetchApiData<T>(method: string, params: ApiParams = {}): Promise<
       url.searchParams.set(key, value.toString())
     );
 
-  const response = await fetch(url);
+  const response = await fetch(url.toString());
   if (!response.ok) throw new Error(`API request failed: ${response.status}`);
   return response.json();
 }

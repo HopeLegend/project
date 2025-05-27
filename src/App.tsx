@@ -1,24 +1,19 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import Home from './routes/Home';
 import Search from './routes/Search';
-import './App.css';
+import { useEffect } from 'react';
 
-function App() {
+export default function App() {
+      useEffect(() => {
+    console.log('React App started');
+  }, []);
   return (
-    <BrowserRouter>
-      <header>
-        <h1>Last.fm Clone</h1>
-        <nav>
-          <Link to="/">Главная</Link>
-          <Link to="/search">Поиск</Link>
-        </nav>
-      </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="search" element={<Search />} />
+      </Route>
+    </Routes>
   );
 }
-
-export default App;

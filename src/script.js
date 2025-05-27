@@ -1,4 +1,4 @@
-const LASTFM_KEY = '6e81a7d82c8ffc507bb2bcfc1f45ddc0';
+const LASTFM_KEY = 'e2c5939f6232a96c047626af6f3c9b50';
 const BASE_ENDPOINT = 'https://ws.audioscrobbler.com/2.0/';
 
 /**

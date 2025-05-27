@@ -1,5 +1,5 @@
 import SearchResult from '../components/Searching'
-import '../styles2.css'; 
+import '../styles_search.css'; 
 export default function Search() {
   return (
   <>
