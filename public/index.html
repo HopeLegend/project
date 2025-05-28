@@ -1,37 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Music | Last.fm</title>
+</head>
+<body>
+  <div id="root">
+    <div class="app">
+      <header class="header">
+        <div class="header__logo">
+          <a href="./index.html" class="header__logo-link">Last.fm</a>
+        </div>
+        
+        <div class="header__wrap">
+          <a class="header__search" href="./search.html"></a>
+          
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link">Live</a></li>
+              <li class="header__nav-item"><a class="header__nav-link">Music</a></li>
+              <li class="header__nav-item"><a class="header__nav-link">Charts</a></li>
+              <li class="header__nav-item"><a class="header__nav-link">Events</a></li>
+            </ul>
+          </nav>
+          
+          <a class="header__avatar">
+            <img class="header__avatar-img" src="images/image.png" loading="eager" fetchpriority="high">
+          </a>
+        </div>
+      </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      <main class="content">
+        <div class="content__top">
+          <h1 class="content__top-header">Music</h1>
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <section class="hot-right-now">
+          <h2 class="hot-right-now__title">Hot right now</h2>
+          <div class="hot-right-now__underline"></div>
+          
+          <div class="hot-right-now__grid">
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+            <div class="hot-right-now__item">
+              <a class="hot-right-now__media">
+                <img class="hot-right-now__thumb" src="images/image.png" alt="Artist name" loading="eager">
+                <p class="hot-right-now__name">Artist name</p>
+              </a>
+              <p class="hot-right-now__tags">
+                <a class="hot-right-now__tag">tag1</a>
+                <a class="hot-right-now__tag">tag2</a>
+                <a class="hot-right-now__tag">tag3</a>
+              </p>
+            </div>
+          </div>
+        </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <section class="popular-tracks">
+          <h2 class="popular-tracks__title">Popular tracks</h2>
+          <div class="popular-tracks__underline"></div>
+          
+          <div class="popular-tracks__columns">
+            <div class="popular-tracks__col">
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-tracks__col">
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="popular-tracks__col">
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+              <div class="popular-tracks__item">
+                <a class="popular-tracks__media">
+                  <img class="popular-tracks__thumb" src="images/image.png" alt="Track name" loading="eager">
+                </a>
+                <div class="popular-tracks__info">
+                  <a class="popular-tracks__track">Track name</a>
+                  <a class="popular-tracks__artist">Artist name</a>
+                  <p class="popular-tracks__tags">
+                    <a class="popular-tracks__tag">tag1</a>
+                    <a class="popular-tracks__tag">tag2</a>
+                    <a class="popular-tracks__tag">tag3</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__top">
+            <div class="footer__section">
+              <h4 class="footer__title">Company</h4>
+              <ul class="footer__list">
+                <li class="footer__item">About Last.fm</li>
+                <li class="footer__item">Contact Us</li>
+                <li class="footer__item">Jobs</li>
+                <li class="footer__item">Features</li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h4 class="footer__title">Help</h4>
+              <ul class="footer__list">
+                <li class="footer__item">Track My Music</li>
+                <li class="footer__item">Community Support</li>
+                <li class="footer__item">Community Guidelines</li>
+                <li class="footer__item">Help</li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h4 class="footer__title">Goodies</h4>
+              <ul class="footer__list">
+                <li class="footer__item">Download Scrobbler</li>
+                <li class="footer__item">Developer API</li>
+                <li class="footer__item">Free Music Downloads</li>
+                <li class="footer__item">Merchandise</li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h4 class="footer__title">Account</h4>
+              <ul class="footer__list">
+                <li class="footer__item">Inbox</li>
+                <li class="footer__item">Settings</li>
+                <li class="footer__item">Last.fm Pro</li>
+                <li class="footer__item">Logout</li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h4 class="footer__title">Follow Us</h4>
+              <ul class="footer__list">
+                <li class="footer__item">Facebook</li>
+                <li class="footer__item">Bluesky</li>
+                <li class="footer__item">Instagram</li>
+                <li class="footer__item">YouTube</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer__bottom">
+            <div class="footer__info">
+              <div class="footer__languages">
+                <a class="footer__language footer__language--active">English</a>
+                <a class="footer__language">Deutsch</a>
+                <a class="footer__language">Español</a>
+                <a class="footer__language">Français</a>
+                <a class="footer__language">Italiano</a>
+                <a class="footer__language">日本語</a>
+                <a class="footer__language">Polski</a>
+                <a class="footer__language">Português</a>
+                <a class="footer__language">Русский</a>
+                <a class="footer__language">Svenska</a>
+                <a class="footer__language">Türkçe</a>
+                <a class="footer__language">简体中文</a>
+              </div>
+              
+              <div class="footer__timezone">Time zone: Europe/Moscow</div>
+              
+              <div class="footer__legal">
+                CBS Interactive © 2025 Last.fm Ltd. All rights reserved · Terms of Use · Privacy Policy · Legal Policies · California Notice · Your Privacy Choices · Jobs at Paramount · Last.fm Music
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
 </html>
