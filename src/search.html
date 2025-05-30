@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Music Search | Last.fm</title>
+    <link rel="stylesheet" href="styles_search.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Main Navigation -->
+        <header class="main-header">
+            <div class="branding">
+                <a href="./index.html" class="brand-logo">Last.fm</a>
+            </div>
+            
+            <div class="header-content">
+                <a href="./search.html" class="search-icon"></a>
+
+                <nav class="navigation">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link">Live</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Charts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Events</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="profile-link">
+                    <img class="profile-image" 
+                         src="images/image.png" 
+                         loading="eager" 
+                         fetchPriority="high"
+                         alt="User avatar">
+                </a>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <main class="page-content">
+            <!-- Search Section -->
+            <section class="search-section">
+                <header class="search-header">
+                    <h1 class="search-heading">Search results for “artist name”</h1>
+                </header>
+
+                <!-- Navigation Tabs -->
+                <div class="filter-tabs">
+                    <ul class="tab-list">
+                        <li class="tab-item active-tab">
+                            <a class="tab-link">Top Results</a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-link">Artists</a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-link">Albums</a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-link">Tracks</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search Form -->
+                <div class="search-form-container">
+                    <form class="search-form" action="./search.html" method="GET">
+                        <input type="search"
+                               name="q"
+                               placeholder="Search for music..."
+                               aria-label="Search music"
+                               class="search-input">
+                        <button type="reset" 
+                                class="clear-btn"
+                                aria-label="Clear search">×</button>
+                        <button type="submit" 
+                                class="submit-btn"
+                                aria-label="Perform search"></button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Artist Results -->
+            <section class="artist-results">
+                <h2 class="section-title">Artists</h2>
+                <div class="artist-grid">
+                    <a class="artist-card" href="#">
+                        <div class="artist-details">
+                            <h3 class="artist-title">Artist name</h3>
+                            <p class="artist-stats">2,807,449 listeners</p>
+                        </div>
+                    </a>
+                    <a class="artist-card" href="#">
+                        <div class="artist-details">
+                            <h3 class="artist-title">Artist name</h3>
+                            <p class="artist-stats">2,807,449 listeners</p>
+                        </div>
+                    </a>
+                    <!-- Repeat artist cards 8 times -->
+                </div>
+                <a class="show-more">More artists →</a>
+            </section>
+
+            <!-- Album Results -->
+            <section class="album-results">
+                <h2 class="section-title">Albums</h2>
+                <div class="album-grid">
+                    <a class="album-card" href="#">
+                        <div class="album-info">
+                            <h3 class="album-title">Album name</h3>
+                            <p class="album-artist">Artist name</p>
+                        </div>
+                    </a>
+                    <!-- Repeat album cards 8 times -->
+                </div>
+                <a class="show-more">More albums →</a>
+            </section>
+
+            <!-- Track Results -->
+            <section class="track-results">
+                <h2 class="section-title">Tracks</h2>
+                <ul class="track-list">
+                    <li class="track-item">
+                        <button class="play-button" aria-label="Play track"></button>
+                        <img class="track-image" 
+                             src="images/image.png" 
+                             alt="Track cover">
+                        <a class="track-title">Track name</a>
+                        <a class="track-artist">Artist name</a>
+                        <span class="track-duration">3:14</span>
+                    </li>
+                    <!-- Repeat track items 10 times -->
+                </ul>
+                <a class="show-more">More tracks →</a>
+            </section>
+        </main>
+
+        <!-- Page Footer -->
+        <footer class="page-footer">
+            <div class="footer-wrapper">
+                <div class="footer-sections">
+                    <div class="footer-block">
+                        <h4 class="footer-heading">Company</h4>
+                        <ul class="footer-links">
+                            <li><a>About Last.fm</a></li>
+                            <li><a>Contact Us</a></li>
+                            <li><a>Jobs</a></li>
+                            <li><a>Features</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block">
+                        <h4 class="footer-heading">Help</h4>
+                        <ul class="footer-links">
+                            <li><a>Track My Music</a></li>
+                            <li><a>Community Support</a></li>
+                            <li><a>Community Guidelines</a></li>
+                            <li><a>Help</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-block">
+                        <h4 class="footer-heading">Goodies</h4>
+                        <ul class="footer-links">
+                            <li><a>Download Scrobbler</a></li>
+                            <li><a>Developer API</a></li>
+                            <li><a>Free Music Downloads</a></li>
+                            <li><a>Merchandise</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-block">
+                        <h4 class="footer-heading">Account</h4>
+                        <ul class="footer-links">
+                            <li><a>Inbox</a></li>
+                            <li><a>Settings</a></li>
+                            <li><a>Last.fm Pro</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-block">
+                        <h4 class="footer-heading">Follow Us</h4>
+                        <ul class="footer-links">
+                            <li><a>Facebook</a></li>
+                            <li><a>Bluesky</a></li>
+                            <li><a>Instagram</a></li>
+                            <li><a>YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-legal">
+                    <div class="language-selector">
+                        <a class="lang-option active">English</a>
+                        <a class="lang-option">Deutsch</a>
+                        <a class="lang-option">Español</a>
+                        <a class="lang-option">Français</a>
+                        <a class="lang-option">Italiano</a>
+                        <a class="lang-option">日本語</a>
+                        <a class="lang-option">Polski</a>
+                        <a class="lang-option">Português</a>
+                        <a class="lang-option">Русский</a>
+                        <a class="lang-option">Svenska</a>
+                        <a class="lang-option">Türkçe</a>
+                        <a class="lang-option">简体中文</a>
+                    </div>
+                    
+                    <div class="timezone-info">Time zone: Europe/Moscow</div>
+                    
+                    <div class="legal-info">
+                        CBS Interactive © 2025 Last.fm Ltd. All rights reserved · 
+                        Terms of Use · Privacy Policy · Legal Policies · 
+                        California Notice · Your Privacy Choices · 
+                        Jobs at Paramount · Last.fm Music
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
