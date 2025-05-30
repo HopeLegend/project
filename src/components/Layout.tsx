@@ -26,7 +26,7 @@ export default function Layout() {
             </ul>
           </div>
           <a className="header__avatar">
-            <img className="header__avatar-img" src="images/image.png" loading="eager"  {...{ fetchpriority: 'high' }} />
+            <img className="header__avatar-img" src="images/image.png" loading="eager"  {...{ fetchPriority: 'high' }} />
           </a>
         </div>
       </nav>
